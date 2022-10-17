@@ -8,11 +8,29 @@
     */
 
     //ENTRADA
-
-
+    let candidato1 = prompt("Nome do primeiro candidato a representante");
+    let candidato2 = prompt("Nome do segundo candidato a representante");
+    let candidato3 = prompt("Nome do terceiro candidato a representante");
+    let alunos = parseInt(prompt("Quantos alunos votantes tem na sala: "));
+    let votosCandidato1 = [];
+    let porcentagemCandidato1 = null;
+    let votosCandidato2 = [];
+    let porcentagemCandidato2 = null;
+    let votosCandidato3 = [];
+    let porcentagemCandidato3 = null;
+    let votosNulo = [];
+    let votos = null;
     //PROCESSAMENTO
-
-
+    for(contador = 1; contador <= alunos; contador++){
+        voto = parseInt(prompt(`candidatos: ${candidato1},  ${candidato2}, ${candidato3} (1-${candidato1} |2-${candidato2} |3- ${candidato3})`))
+        if(voto === 1) votosCandidato1.push(voto)
+        else if (voto === 2) votosCandidato2.push(voto)
+        else if (voto === 3) votosCandidato3.push(voto)
+        else votoNulo.push(voto)
+    }
+    porcentagemCandidato1 = (votosCandidato1.length / alunos) * 100
+    porcentagemCandidato2 = (votosCandidato2.length / alunos) * 100
+    porcentagemCandidato3 = (votosCandidato3.length / alunos) * 100
     //SAÍDA
-
+    document.write(`Candidato: ${candidato1}</br>Quantidade de votos: ${votosCandidato1.length}</br>Porcentagem de votos: ${porcentagemCandidato1.toFixed(2)}% </br></br>Candidato:${candidato2} </br>Quantidade de votos: ${votosCandidato2.length}</br>Porcentagem de votos: ${porcentagemCandidato2.toFixed(2)}%</br></br>Candidato: ${candidato3}</br>Quantidade de votos: ${votosCandidato3.length}</br>Porcentagem de votos: ${porcentagemCandidato3.toFixed(2)}%`)
 </script>

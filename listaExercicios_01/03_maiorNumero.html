@@ -7,11 +7,11 @@
     */
 
     //ENTRADA
-
-
     //PROCESSAMENTO
-
-
+    let numeros = []
+    for (let contador = 1; contador <= 5; contador++){
+        numeros.push(Number(prompt(`informe os numeros`)));
+    }
     //SAÍDA
-
-</script>
+    document.write(`${numeros.sort((a,b)=> b-a)[0]}`);
+    </script>

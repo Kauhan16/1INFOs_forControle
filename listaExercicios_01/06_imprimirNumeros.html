@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
-
-
+    let numerosInicial = parseInt(prompt("Informe o número inicial de uma lista"));
+    let numerosFinal = parseInt(prompt("Informe o número final de uma lista"));
+    let pares = [];
+    let impares = [];
     //PROCESSAMENTO
-
+    if(numerosInicial < numerosFinal){
+        for(let contador = 1;contador <= numerosFinal;contador++){
+            if(contador % 2 === 0) pares.push(contador)
+            else impares.push(contador)
+        }
+    } else document.write("Formato invalido! </br> O número inicial deve ser menor que o número final!")
 
     //SAÍDA
-
+    document.write(`Números pares entre ${numerosInicial} e ${numerosFinal}: ${pares.join(", ")} </br> Números impares entre ${numerosInicial} e ${numerosFinal}: ${impares.join(", ")}`)
 </script>

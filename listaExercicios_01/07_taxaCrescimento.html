@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
-
+let populaçãoAtual = 80000;
+let populaçãoFinal = 200000;
+let taxas = 1.03;
     //PROCESSAMENTO
-
+    let anos = 0
+for (anos = 1; populaçãoAtual <= populaçãoFinal; anos++){
+    populaçãoAtual = populaçãoAtual * taxas;
+}
 
     //SAÍDA
-
+document.write(`Serão necessarios ${soma}anos para completar 200.000! `)
 </script>

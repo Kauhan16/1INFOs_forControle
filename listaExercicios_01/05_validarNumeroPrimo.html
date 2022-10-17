@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
-
-
+    let numero = parseInt(prompt(`informe um numero`));
+    let contadora = 0;
     //PROCESSAMENTO
+    for (let contador = 1; contador <= numero; contador++) {
 
-
+        if (numero % contador == 0){
+              contadora++ ;
+                   }
+    }
+(contadora === 2 )? document.write("numero primo "): document.write("numero não é primo");
+        
+ 
     //SAÍDA
 
 </script>

@@ -7,11 +7,20 @@
     */
 
     //ENTRADA
-
+    const notas = Number(prompt(`quantas notas o aluno recebeu`))
 
     //PROCESSAMENTO
-
-
+    let soma = 0;
+    for (let contador = 1; contador <= notas; contador++) {
+        const nota = Number(prompt(`informe a nota do aluno`));
+        soma = nota + soma;
+    }
+    const media = soma / notas;
+    if (media >= 6){
+        document.write("o aluno foi aprovado")
+    }
+    else {
+        document.write("aluno foi reprovado")
+    }
     //SAÍDA
-
 </script>

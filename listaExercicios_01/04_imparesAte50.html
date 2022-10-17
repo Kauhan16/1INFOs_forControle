@@ -6,11 +6,11 @@
     */
 
     //ENTRADA
-
-
+    let impar = [];
     //PROCESSAMENTO
-
-
+    for(let contador = 1; contador <= 50; contador++){
+        if(contador % 2 >= 1) impar.push(contador)
+    }
     //SAÍDA
-
+    document.write(`Números Impares de 1 a 50: ${impar.join(", ")}`)
 </script>
